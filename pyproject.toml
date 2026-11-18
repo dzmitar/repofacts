@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "repofacts"
+version = "0.0.1"
+description = "Deterministic, evidence-backed repository knowledge map for AI agents and sessions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Dzmitar", email = "dzmitar.noreply@gmail.com" }
+]
+keywords = ["ai", "agents", "codebase", "static-analysis", "mcp", "repository"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Code Generators",
+]
+
+[project.scripts]
+repofacts = "repofacts.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/dzmitar/repofacts"
+Repository = "https://github.com/dzmitar/repofacts"
